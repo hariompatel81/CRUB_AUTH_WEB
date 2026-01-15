@@ -1,7 +1,20 @@
-import Dashboard from "./pages/Dashboard";
+import React from 'react';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import AuthForm from './auth/AuthForm';
 
-function App() {
-  return <Dashboard />;
-}
+const router = createBrowserRouter([
+    {
+      path:'/',
+      element: <AuthForm />
+    },
+  ]);
+
+const App = ()=>{
+  return(
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  );
+};
 
 export default App;
