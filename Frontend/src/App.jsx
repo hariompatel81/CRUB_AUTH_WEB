@@ -1,20 +1,8 @@
-import React from 'react';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import AuthForm from './auth/AuthForm';
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/router";
 
-const router = createBrowserRouter([
-    {
-      path:'/',
-      element: <AuthForm />
-    },
-  ]);
-
-const App = ()=>{
-  return(
-    <div>
-      <RouterProvider router={router} />
-    </div>
-  );
+const App = () => {
+  return <RouterProvider router={router} />;
 };
 
 export default App;

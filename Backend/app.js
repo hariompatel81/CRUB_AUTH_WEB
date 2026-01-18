@@ -6,9 +6,9 @@ const app = express();
 // app.use(cors());
 app.use(
   cors({
-    origin: "http://localhost:5173", // ⭐ EXACT frontend
-    credentials: true,               // ⭐ MUST
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: "http://localhost:5173", // EXACT frontend
+    credentials: true,               // MUST
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
   })
 );
 app.use(express.json());
